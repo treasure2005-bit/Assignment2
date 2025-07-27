@@ -3,9 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>REGISTER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<style>
+    .navbar .nav-link,
+    .navbar.nav-brand
+     {
+      color: white;
+    }
+    .body {
+        /* background-size: contain; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position: center;
+    }
+  </style>
+<body style="background-image: url(download1.jpeg);" class="body">
+<!-- <body style="background-image: url(download1.jpeg)"> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid" style="background-color: rgb(17, 54, 83)">
+        <h1 style="font-style: oblique; color: rgb(212, 187, 122);">MWF WOODS & FURNITURE LIMITED (Ltd)</h1>
+        <a class="navbar-brand" href="#">
+          <!-- <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30px" height="24px"> -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                style="color: azure"
+                href="./dashboard.html"
+                >PRODUCTS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sales.html">SALES</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="./employee_register.html">REGISTER</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="./stock.html">STOCK</a>
+            </li>
+            <!-- <li class="nav-item dropdown"> -->
+              <!-- <a
+                class="nav-link dropdown-toggle"
+                href="./employee_register.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                REGISTER
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">STORE MANAGERS</a></li>
+                <li><a class="dropdown-item" href="#">ADMINISTRATORS</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">ATTENDANTS(8)</a></li>
+              </ul>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a href="./stock.html"class="nav-link disabled" aria-disabled="true">STOCK</a> -->
+              <!-- <a href="./stock.html" class="nav-link disabled" aria-disabled="true">STOCK</a> -->
+            <!-- </li>
+          </ul> -->
+          <form class="d-flex" role="search" style="margin-left: 500px;">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+             search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Role Form</title> -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: burlywood;
+      padding: 30px;
+    }
+
+    form {
+      background-color:rgb(171, 114, 114);
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #2d89ef;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1b5fa7;
+    }
+  </style>
 </head>
 <body>
-    
+
+<form>
+  <h2>User Registration</h2>
+
+  <label for="role">Select Your Role:</label>
+  <select id="role" name="role" required>
+    <option value="">--Select Role--</option>
+    <option value="store_manager">Store Manager</option>
+    <option value="administrator">Administrator</option>
+    <option value="attendant">Attendant</option>
+  </select>
+
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="gender">Gender:</label>
+  <select id="gender" name="gender" required>
+    <option value="">--Select Gender--</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
+
+  <label for="address">Address:</label>
+  <textarea id="address" name="address" rows="2" required></textarea>
+
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+
+  <!-- ✅ Additional Questions -->
+  <label for="experience">Do you have prior experience in this role?</label>
+  <select id="experience" name="experience">
+    <option value="">--Select--</option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+    <option value="some">Somewhat</option>
+  </select>
+
+  <label for="availability">What is your availability?</label>
+  <select id="availability" name="availability">
+    <option value="">--Select--</option>
+    <option value="full_time">Full Time</option>
+    <option value="part_time">Part Time</option>
+    <option value="weekends">Weekends Only</option>
+  </select>
+
+  <label for="message">Why do you want to work with us?</label>
+  <textarea id="message" name="message" rows="3"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Footer Example</title>
+  <style>
+    .footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+       margin-top: 200px;
+    }
+
+    .footer .info {
+      margin-bottom: 15px;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 20px;
+    }
+
+    .footer a:hover {
+      color: #00aced;
+    }
+
+    .footer .social-icons {
+      margin-top: 10px;
+    }
+
+    .footer .social-icons i {
+      margin: 0 8px;
+    }
+  </style>
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Footer Section -->
+<div class="footer">
+  <div class="info">
+    <strong>Mayondo Woods and Furniture Limited</strong><br>
+    📞 Contact: 0763177659 <br>
+    📍 Location: Ndeeba <br>
+    ✉️ Email: <a href="mailto:ankundatreasure97@gmail.com">ankundatreasure97@gmail.com</a>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+  </div>
+
+  <p style="margin-top: 15px; font-size: 12px;">&copy; 2025 Mayondo Wood and Furniture. All rights reserved.</p>
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

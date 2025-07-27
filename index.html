@@ -7,6 +7,95 @@
     <link rel="stylesheet" href="css/bootstrap-5.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+<body>
+  <style>
+    .navbar .nav-link,
+    .navbar.nav-brand
+     {
+      color: white;
+    }
+    .body {
+        /* background-size: contain; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position: center;
+    }
+  </style>
+  <body style="background-image: url(download1.jpeg);" class="body">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid" style="background-color: rgb(17, 54, 83)">
+        <h1 style="font-style: oblique; color: rgb(212, 187, 122);">MWF WOODS & FURNITURE LIMITED (Ltd)</h1>
+        <a class="navbar-brand" href="#">
+          <!-- <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30px" height="24px"> -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                style="color: azure"
+                href="./dashboard.html"
+                >PRODUCTS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sales.html">SALES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./employee_register.html">REGISTER</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="./stock.html">STOCK</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="./employee_register.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                REGISTER
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">STORE MANAGERS</a></li>
+                <li><a class="dropdown-item" href="#">ADMINISTRATORS</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">ATTENDANTS(8)</a></li>
+              </ul>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a href="./stock.html"class="nav-link disabled" aria-disabled="true">STOCK</a> -->
+              <!-- <a href="./stock.html" class="nav-link disabled" aria-disabled="true">STOCK</a> -->
+            <!-- </li>
+          </ul> -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
   <section class="vh-100" style="background-image:url(backgroundimage.jpeg);">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -14,22 +103,22 @@
         <div class="card shadow-2-strong" style="border-radius: 1rem; background-image:url(login.jpeg) ;">
           <div class="card-body p-5 text-center">
 
-            <h3 class="mb-5">Sign in</h3>
+            <h3 class="mb-5" style="color: aliceblue;">Sign in</h3>
 
             <div data-mdb-input-init class="form-outline mb-4">
               <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
-              <label class="form-label" for="typeEmailX-2">Email</label>
+              <label class="form-label" for="typeEmailX-2" style="color: aliceblue;">Email</label>
             </div>
 
             <div data-mdb-input-init class="form-outline mb-4">
               <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
-              <label class="form-label" for="typePasswordX-2">Password</label>
+              <label class="form-label" for="typePasswordX-2" style="color: aliceblue;">Password</label>
             </div>
 
             <!-- Checkbox -->
             <div class="form-check d-flex justify-content-start mb-4">
               <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
-              <label class="form-check-label" for="form1Example3"> Remember password </label>
+              <label class="form-check-label" for="form1Example3" style="color: aliceblue;"> Remember password </label>
             </div>
 <a class="btn btn-primary" href="dashboard.html" role="button">Login</a>
             
@@ -46,60 +135,66 @@
     </div>
   </div>
 </section>
- 
-  <!-- <body style="background-image:url(backgroundimage.jpeg)">
-    <div class="container">
-      <div class="row" id="login-form-row" style="margin-right: 400px; margin-top: 10%;">
-        <div class="col-md-6"></div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-header text-white" style="background-color: aqua;" > 
-              Login to your account
-            </div>
-            <div class="card-body">
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Email address</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                  <div id="emailHelp" class="form-text">
-                    We'll never share your email with anyone else.
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"
-                    >Password</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                  />
-                </div>
-                <div class="mb-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <label class="form-check-label" for="exampleCheck1"
-                    >Tick me</label
-                  >
-                </div>
-                <a href="dashboard.html"></a>
-                <a class="btn btn-primary" href="dashboard.html" role="button">Login</a>
-                <button type="submit" class="btn btn-primary">Login</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Footer Example</title>
+  <style>
+    .footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer .info {
+      margin-bottom: 15px;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 20px;
+    }
+
+    .footer a:hover {
+      color: #00aced;
+    }
+
+    .footer .social-icons {
+      margin-top: 10px;
+    }
+
+    .footer .social-icons i {
+      margin: 0 8px;
+    }
+  </style>
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Footer Section -->
+<div class="footer">
+  <div class="info">
+    <strong>Mayondo Woods and Furniture Limited</strong><br>
+    📞 Contact: 0763177659 <br>
+    📍 Location: Ndeeba <br>
+    ✉️ Email: <a href="mailto:ankundatreasure97@gmail.com">ankundatreasure97@gmail.com</a>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+  </div>
+
+  <p style="margin-top: 15px; font-size: 12px;">&copy; 2025 Mayondo Wood and Furniture. All rights reserved.</p>
+</div>
+
+</body>
 </html>
+  
